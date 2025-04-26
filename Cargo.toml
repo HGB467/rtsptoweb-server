@@ -1,0 +1,15 @@
+[package]
+name = "rtsp"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+gstreamer = { version = "0.23.4" }
+glib = { git = "https://github.com/gtk-rs/gtk-rs-core.git", package = "glib" }
+gstreamer-app = "0.23.4"
+axum = { version = "0.7.9", features = ["macros"] }
+tokio = { version = "1.0", features = ["full"] }
+tower-http = { version = "0.5", features = ["fs", "cors"] }
+serde_json = "1.0.137"
+serde = { version = "1.0.217", features = ["derive"] }
+gst-plugin-webrtc-signalling = "0.13.5"
